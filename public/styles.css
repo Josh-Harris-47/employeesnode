@@ -1,0 +1,42 @@
+body{
+  background-color: pink;
+}
+header{
+  height:100px;
+  width:100vw;
+  border-bottom:1px solid gray;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container{
+  height:max-content;
+  min-height: 90vh;
+  width:100vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: space-around;
+  justify-content: center;
+}
+.card{
+  width: 400px;
+  height: max-content;
+  border:1px solid black;
+  padding:20px;
+  margin:20px;
+  text-align: center;
+  border-radius: 10px;
+}
+.card:hover{
+  background-color: black;
+  color:white;
+  opacity: .5;
+}
+button {
+  padding: 10px;
+  background-color: hotpink;
+  border-radius: 10px;
+}
