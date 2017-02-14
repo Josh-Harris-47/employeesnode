@@ -5,6 +5,13 @@ module.exports = {
     res.send(employeeList);
   },
   create: function(req,res){
+    var id = 0;
+    for(var i = 0; i < employeeList.length; i++){
+      if(employeeList[id].id > id){
+        id = employeeList[i].id;
+      }
+    }
+    req.body.id = id+1;
     employeeList.push(req.body);
     res.send(employeeList);
   },

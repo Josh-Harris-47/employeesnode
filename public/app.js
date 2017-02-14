@@ -28,3 +28,25 @@ var deleteEmployees = function(id){
     getEmployees()
   })
 }
+
+var postEmployee = function(){
+  var newEmployee = {
+    name: $("#newname").val(),
+    email: $("#newemail").val(),
+    password: $("#newpassword").val(),
+    dob: $("#newdob").val(),
+    phonenumber: $("#newphonenumber").val()
+  };
+  $.ajax({
+    method: "POST",
+    url: "/employees",
+    data: newEmployee
+  }).then(function(res){
+    getEmployees();
+    $('#newname').val("");
+    $('#newemail').val("");
+    $('#newpassword').val("");
+    $('#newdob').val("");
+    $('#newphonenumber').val("");
+  });
+};

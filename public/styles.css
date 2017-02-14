@@ -40,3 +40,30 @@ button {
   background-color: hotpink;
   border-radius: 10px;
 }
+button:hover{
+  background-color: pink;
+}
+.create{
+  height:max-content;
+  width:100vw;
+  padding:20px;
+  /*display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;*/
+  /*align-items: center;
+  align-content: center;*/
+  /*justify-contf: 10px;*/
+}
+input {
+  font-size: 20px;
+  padding: 8px;
+  margin:8px;
+}
+input[type="submit"]{
+  font-size: 20px;
+  padding: 80px;
+  margin-left: 120px;
+  margin-top: 20px;
+  box-sizing: inherit;
+  transform: scale(1.5);
+}
